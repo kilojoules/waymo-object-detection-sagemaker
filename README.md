@@ -36,3 +36,9 @@ Each model is compared in terms of accuracy and validation loss. These are based
 In all cases, the accuracy is too low and the validation loss is too high. This could be improved by training the models for more epochs and increasing the batch size, both of which are out of scope for this problem. Particularly because of the memory requirements of increasing the batch size, which would require a completely different computational setup.
 
 Interestingly, EfficientDet (this baseline model notebook) is the most accurate of the three models (it has the highest accuracy and the lowest validation loss). It has the highest accuracy and the lowest validation loss. This is likely because EfficientDet D1 is a favorable architecture for this system. The SSD MobileNet V2 structure is designed to run with lower latency, which may have speed advantages not reflected in this analysis. The Faster R-CNN ResNet50 is a more advanced architecture, which I speculate may plateau at a better performance given extensive training compute. 
+
+
+## Acknowledgements
+
+The foundational code for the training and deployment notebooks (`1_train_model.ipynb`, `2_deploy_model.ipynb`) was provided as a template by Udacity for the Self-Driving Car Engineer Nanodegree program. My work involved adapting these templates, training multiple model architectures, evaluating their performance, and deploying the best model.
+
